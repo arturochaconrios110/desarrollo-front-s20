@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -14,17 +14,17 @@ import { Box } from '@mui/material'
 function App() {
 
   return (
-    <>
-      <Header/>
-      <Banner/>
-      <Box sx={{my: 4, mx: 2, p: 2}}>
-      <DynamicList/>
-      </Box>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Header />
+      <Banner />
+      <DynamicList />
+      <ContactForm />
+      <Footer />
+    </Box>
+     
 
-      <ContactForm/>
-      <Footer/>
-    </>
   )
 }
 
-export default App
+export default App;
+
