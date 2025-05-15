@@ -1,5 +1,7 @@
 import {TextField, Button, Box, Typography} from '@mui/material';
 import React, {useState} from 'react';
+import DynamicList from './DynamicList';
+import Timer from './Timer';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({name: '', email: '', message: ''});
@@ -75,16 +77,23 @@ const ContactForm = () => {
                 error={!!error.message}
                 helperText={error.message }
             />
-            <Button 
-                type="submit"
-                variant="contained" 
-                color="primary" 
-                fullWidth 
-                sx={{ mt: 2 }}
-            >
-                Enviar
-            </Button>
+            <DynamicList />
+            {/*Boton de enviar*/} 
+            <Button type="submit" variant="contained" color="primary" fullWidth> Enviar</Button>
+            {/* Mesaje de Exito */}
+            {success && <Typography color="success.main" sx={{ mt: 2 }}>¡Mensaje enviado con éxito!</Typography>}
+            {/* Mensaje de error */}
+            {Object.keys(error).length > 0 && (
+                 <Typography color="error.main" sx={{ mt: 2 }}>
+                {Object.values(error).map((err, index) => (
+                 <div key={index}>{err}</div>
+                ))}
+                </Typography>
+)}
+            {/* Timer */}
+            <Timer />
         </Box>
+        
     )
 }
 export default ContactForm;

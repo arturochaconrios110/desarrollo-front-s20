@@ -12,19 +12,14 @@ import DynamicList from './components/DynamicList'
 import { Box } from '@mui/material'
 
 function App() {
-
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <>
       <Header />
       <Banner />
-      <DynamicList />
       <ContactForm />
       <Footer />
-    </Box>
-     
-
-  )
+    </>
+  );
 }
 
 export default App;
-
