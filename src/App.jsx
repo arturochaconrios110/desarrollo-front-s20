@@ -4,22 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 //Importaciones de componentes
-
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ContactForm from './components/ContactForm'
 import Banner from './components/Banner'
+import DynamicList from './components/DynamicList'
+import { Box } from '@mui/material'
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header/>
-       <Banner/>
+      <Banner/>
+      <Box sx={{my: 4, mx: 2, p: 2}}>
+      <DynamicList/>
+      </Box>
+
       <ContactForm/>
       <Footer/>
-     
-
     </>
   )
 }
