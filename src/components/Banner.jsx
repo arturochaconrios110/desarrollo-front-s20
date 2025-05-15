@@ -38,7 +38,7 @@ const Banner = () => {
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
-          Bienvenido a nuestra tienda de antigüedades
+          Bienvenido a la Municipalidad de Cholchol
         </Typography>
         <Typography variant="h6" sx={{ mb: 4 }}>
           Trabajamos para ti y tu comunidad.

@@ -11,6 +11,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import { Link } from '@mui/material';
+import logo from '/src/assets/channels4_profile.jpg';
+
 
 /**
  * Componente Header: Representa el encabezado de la aplicación
@@ -34,16 +36,14 @@ const Header = () => {
             {/* Logo de la aplicación */}
             <Avatar
               alt="Logo"
-              src="/path/to/icon.png" // Reemplaza con la ruta de tu ícono
-              sx={{ marginRight: 1 }}
+              src={logo} 
+              sx={{ marginRight: 5 }}
             />
             {/* Título del encabezado */}
             <Typography variant="h6">
               Municipalidad de Cholchol 
-              <br />
             </Typography>
-            <br />
-           <br />
+            
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {/* Enlaces de navegación */}
