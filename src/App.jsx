@@ -15,9 +15,10 @@ function App() {
   return (
     <>
       <Header/>
+       <Banner/>
       <ContactForm/>
       <Footer/>
-      <Banner/>
+     
 
     </>
   )
