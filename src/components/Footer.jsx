@@ -4,7 +4,7 @@ import {Box, Typography} from '@mui/material';
 const Footer = () => {
     return (
 
-        <Box sx={{ backgroundColor: '#333', color: '#fff', py: 2, textAlign: 'center' }}>
+        <Box sx={{ backgroundColor: 'DodgerBlue', color: '#fff', py: 2, textAlign: 'center' }}>
             <Typography variant="body2" color="inherit">
                 © 2025 Municipalidad de Cholchol. Todos los derechos reservado.
             </Typography>

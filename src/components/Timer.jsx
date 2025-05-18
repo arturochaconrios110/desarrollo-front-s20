@@ -6,7 +6,7 @@ const Timer = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTimerText("Hora actual: " + new Date().toLocaleTimeString());        
+            setTimerText("Hora local: " + new Date().toLocaleTimeString());        
             },1000);
             return() => clearInterval(interval);
         }
@@ -15,7 +15,7 @@ const Timer = () => {
 
     return (
         <Box sx={{textAlign : 'center', my: 4}}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="body2" gutterBottom>
                 {timertext}
             </Typography>
             </Box>

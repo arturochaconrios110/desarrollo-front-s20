@@ -49,13 +49,16 @@ const Header = () => {
             {/* Enlaces de navegación */}
             <br />
             <Link href="#servicios" color="inherit" underline="none" sx={{ marginRight: 2 }}>
-              Servicios
+              Home
             </Link>
             <Link href="#contacto" color="inherit" underline="none" sx={{ marginRight: 2 }}>
-              Contacto
+             Municipio
             </Link>
             <Link href="#opcion3" color="inherit" underline="none">
-              Opción 3
+              Unidades Municipales
+            </Link>
+            <Link href="#opcion3" color="inherit" underline="none">
+              Contacto
             </Link>
           </Box>
           {/* Botón para abrir el menú en dispositivos pequeños */}

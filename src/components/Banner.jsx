@@ -7,7 +7,7 @@ const Banner = () => {
       sx={{
         height: '60vh',
         position: 'relative',
-        backgroundImage: 'url(/src/assets/banner.jpeg)', // Reemplaza con la ruta correcta de tu imagen
+        backgroundImage: 'url(/src/assets/paisaje.jpg)', // Reemplaza con la ruta correcta de tu imagen
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
