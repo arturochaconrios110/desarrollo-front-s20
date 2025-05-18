@@ -48,16 +48,16 @@ const Header = () => {
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {/* Enlaces de navegación */}
             <br />
-            <Link href="#servicios" color="inherit" underline="none" sx={{ marginRight: 2 }}>
+            <Link href="/" color="inherit" underline="none" sx={{ marginRight: 2 }}>
               Home
             </Link>
-            <Link href="#contacto" color="inherit" underline="none" sx={{ marginRight: 2 }}>
+            <Link href="#banner" color="inherit" underline="none" sx={{ marginRight: 2 }}>
              Municipio
             </Link>
-            <Link href="#opcion3" color="inherit" underline="none">
-              Unidades Municipales
+            <Link href="#servicios" color="inherit" underline="none">
+              Numeros Municipales
             </Link>
-            <Link href="#opcion3" color="inherit" underline="none">
+            <Link href="#contacto" color="inherit" underline="none">
               Contacto
             </Link>
           </Box>

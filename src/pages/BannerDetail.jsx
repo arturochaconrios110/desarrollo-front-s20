@@ -28,8 +28,8 @@ const BannerDetail = () => {
     
     return (
         <Container>
-            <Box sx={{ mt: 4 }}>
-                <ImageList sx={{ width: 500, height: 450 }}>
+            <Box sx={{ mt: 9 }}>
+                <ImageList sx={{ width: 1200, height: 800 }}>
                     {bannerItem.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
