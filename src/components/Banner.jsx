@@ -1,8 +1,13 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import paisaje from '../assets/paisaje.jpg';
+import { useNavigate } from 'react-router-dom';
 
-const Banner = () => {
+const Banner = (banners) => {
+const navigate = useNavigate();
+    const handleTeadMore = (ban) => {
+        navigate('/banners-detail', { state: { bannersItem:ban } });
+    }
   return (
     <Box
       sx={{

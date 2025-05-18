@@ -23,16 +23,80 @@ import educacion from './assets/educacion.jpg'
 //IMPORTAR PAGES
 import NewsDetail from './pages/NewsDetail'
 import ServicesDetail from './pages/ServicesDetail'
+import BannerDetail from './pages/BannerDetail' // Eliminar o comentar si no se usa
 
 function App() {
 
+const banner=[
+  {
+    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    title: 'Breakfast',
+    author: '@bkristastucchio',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    title: 'Burger',
+    author: '@rollelflex_graphy726',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    title: 'Camera',
+    author: '@helloimnik',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    title: 'Coffee',
+    author: '@nolanissac',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    title: 'Hats',
+    author: '@hjrc33',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    title: 'Honey',
+    author: '@arwinneil',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    title: 'Basketball',
+    author: '@tjdragotta',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+    title: 'Fern',
+    author: '@katie_wasserman',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+    title: 'Mushrooms',
+    author: '@silverdalex',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+    title: 'Tomato basil',
+    author: '@shelleypauls',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+    title: 'Sea star',
+    author: '@peterlaster',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+    title: 'Bike',
+    author: '@southside_customs',
+  },
+  ];
+
 const arregloServicio = [
-  { nombre: 'Atención al ciudadano', imagen: channels4_profile, image:atencion,description: 'Informaciones Fono: +56 4 5273 4200 ' },
-  { nombre: 'Gestión de Residuos', imagen: channels4_profile, image:medioamb,description: 'Informaciones Fono: +56 4 5273 4208 '  },
-  { nombre: 'Actividades Culturales', imagen: channels4_profile, image:centrocultural,description: 'Informaciones Fono: +56 4 5273 4218 '   },
-  { nombre: 'Mantenimiento de Espacios Públicos', imagen: channels4_profile, image:obras,description: 'Informaciones Fono: +56 4 5273 4213 ' },
-  { nombre: 'Servicios de Salud', imagen: channels4_profile, image:salud,description: 'Informaciones Fono urgencia: +56 4 5273 4277 - Fono Some:+56 4 5273 4275' },
-  { nombre: 'Educación y Capacitación', imagen: channels4_profile, image:educacion,description: 'Informaciones Fono: +56 4 5273 4220 '  },
+  { nombre: 'Atención al ciudadano', imagen: channels4_profile, imagenExtra: atencion, description: 'Informaciones Fono: +56 4 5273 4200 ' },
+  { nombre: 'Gestión de Residuos', imagen: channels4_profile, imagenExtra: medioamb, description: 'Informaciones Fono: +56 4 5273 4208 '  },
+  { nombre: 'Actividades Culturales', imagen: channels4_profile, imagenExtra: centrocultural, description: 'Informaciones Fono: +56 4 5273 4218 '   },
+  { nombre: 'Mantenimiento de Espacios Públicos', imagen: channels4_profile, imagenExtra: obras, description: 'Informaciones Fono: +56 4 5273 4213 ' },
+  { nombre: 'Servicios de Salud', imagen: channels4_profile, imagenExtra: salud, description: 'Informaciones Fono urgencia: +56 4 5273 4277 - Fono Some:+56 4 5273 4275' },
+  { nombre: 'Educación y Capacitación', imagen: channels4_profile, imagenExtra: educacion, description: 'Informaciones Fono: +56 4 5273 4220 '  },
 ];
 
 const news=[
@@ -52,7 +116,7 @@ return (
             width: '100%',
           }}>
           <Header />
-          <Banner />
+          <Banner banners={banner} />
           <ServicesSection services={arregloServicio} />
           <NewsSection news={news} />
           <ContactForm />

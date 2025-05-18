@@ -33,7 +33,7 @@ const ServicesDetail = () => {
                 <CardMedia
                     component="img"
                     sx={{ width: 500, display: 'block', margin: '0 auto' }}
-                    image={servicesItem.image}
+                    image={servicesItem.imagenExtra}
                 />
                 <br />
                 <Typography variant="h5" gutterBottom>
