@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import paisaje from '../assets/paisaje.jpg';
 
 const Banner = () => {
   return (
@@ -7,7 +8,7 @@ const Banner = () => {
       sx={{
         height: '60vh',
         position: 'relative',
-        backgroundImage: 'url(/src/assets/paisaje.jpg)', // Reemplaza con la ruta correcta de tu imagen
+        backgroundImage: `url(${paisaje})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
@@ -25,7 +26,7 @@ const Banner = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Ajusta la opacidad según sea necesario
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
           zIndex: 1,
         }}
       />
